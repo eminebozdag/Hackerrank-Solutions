@@ -18,31 +18,24 @@ namespace ConsoleApp4
             int[,] ar = new int[n,n];
             for (i = 0; i <n; i++) //enter number
             {
-                for ( j = 0; j < n; j++)
-                {
+                for ( j = 0; j < n; j++) 
                     ar[i, j] = Convert.ToInt32(Console.ReadLine());
-                }
             }
 
             for (i = 0; i < n;  i++) //read number
             {
                  for ( j = 0; j < n; j++)
                 {
-                    //Console.WriteLine(array[i, j]); 
                     if (i == j)
-                    {
-                        sum1 += ar[i, j];                        
-                    }                    
+                        sum1 += ar[i, j];                                          
                 }
             }
             sum2 = ar[0, 2] + ar[1, 1] + ar[2, 0];
             int tot = sum1 - sum2;
             if (tot < 0)
-
                 Console.WriteLine(tot * -1);
             else
                 Console.WriteLine(tot);
-
             Console.ReadLine();
         }
     }
