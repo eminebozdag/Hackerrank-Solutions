@@ -13,8 +13,7 @@ using System.Text;
 using System;
 
 class Solution {
-
-    // Complete the staircase function below.
+    
     static void staircase(int n) {
         int i,j;
         for(i=0; i<n; i++){
